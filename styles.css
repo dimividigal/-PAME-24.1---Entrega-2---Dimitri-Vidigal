@@ -11,7 +11,6 @@ body{
     width: 100vw;
     height: 15vh;
     margin: 0%;
-    
 }
 
 #textologo{
@@ -26,65 +25,201 @@ body{
     height: 80px;
 }
 
-#background{
-    
-    background-image: url(Foto_Fluxo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+.background{
     width: 100vw;
-    height: 60vw;
+    height: 75vh;
     display:flex;
     align-items: center;
     justify-content: space-around;
-
-    
-    
-    
+    position: relative;
+    isolation: isolate;
 }
 
+.background::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background-image: url(Foto_Fluxo.png);
+    filter: grayscale(100%) blur(1px) brightness(30%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 #bottom{
     background-color: black;
-    height: 20vh;
+    height: 10vh;
     width: 100vw;
-    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    vertical-align: bottom;
 }
 
 #bemvindo{
-
-    
-
-    height: 50vh;
+    height: 60vh;
     width: 40vw;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: flex-start;
-    
-
-
-
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 
 #telaform{
-
-    background-color: aqua;
     height: 60vh;
     width: 40vw;
+    gap: 10px;
     display: flex;
-    
-
-
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #logo2{
-
-    height: 80vh;
-    width: 100vw;
-
-
+    height: 400px;
+    width: 700px;
+    position: absolute;
 }
+
+#email{
+    width: 30vw;
+    height: 10vh;
+}
+
+#senha{
+    width: 30vw;
+    height: 10vh;
+}
+
+#organizasenha{
+    width: 30vw;
+    height: 3vw;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5px;
+}
+
+.caixapergunta{
+    width: 30vw;
+    height: 7vh;
+    border-radius: 5px;
+    border: none;
+}
+
+.botao{
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    display: inline-block;
+    color: gray;
+}
+
+.ponto{
+    color: gray;
+    font-size: 70%;
+}
+
+#lembrarcad{
+    width: 30vw;
+    height: 5vh;
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+    
+}
+
+#checkbox{
+    background-color: orange;
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.textoapple{
+    font-size: 70%;
+    color: gray;
+}
+
+.textlaranjapeq{
+    font-family: 'arial';
+    font-size: 80%;
+    color: orange;
+}
+
+.textbrancopeq{
+    font-family: 'arial';
+    font-size: 80%;
+    color: white;
+}
+
+.textobrancogrande{
+    font-family: 'arial';
+    font-size: 150%;
+    color: white;
+}
+
+.happeningnow{
+    font-family: 'arial';
+    font-size: 120%;
+    color: orange;
+}
+
+#bolinha{
+    background-color: aliceblue;
+    width: 20px;
+    height: 20px;
+    border-radius: 12px;
+}
+
+#entrar{
+    background-color: po;
+    width: 30vw;
+    height: 5vh;
+}
+
+#botaoentrar{
+    background-color: orange;
+    color: white;
+    font-size: 100%;
+    width: 30vw;
+    height: 7vh;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+}
+
+#apple{
+    width: 30vw;
+    height: 7vh;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.entrecom{
+    background-color: white;
+    width: 30vw;
+    height: 5vh;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.fotologo{
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+}
+
+
 
 
 

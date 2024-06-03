@@ -1,45 +1,106 @@
 <!DOCTYPE html>
 <html lang = en>
 <head>
+
     <meta charset="UTF-8">
     <meta name = "viewport" content="width=device-width, initial-scale=1.0">
     <title>PAME 24.1</title>
     <link rel="stylesheet" href="styles.css"></link>
+    <script src="mensagem_login.js"></script>
+
 </head>
 <body>
+
     <div id="header">
 
         <div id="textologo">
             <img id ='logo' src="logoFluxo.png"/>
-            <h1 style="color:white; font-family:'arial';font-size: 90%;">FluxoSocial </h1>
+            <h1 class="textobrancogrande">FluxoSocial </h1>
             
         </div>
-        <div><h2 style="color:orange; font-family:'arial';font-size: 60%;">It is happening now!</h2>
+        <div><h2 class="happeningnow">It is happening now!</h2>
         </div>
         
     </div>
-    <div id="background">
+    <div class="background">
         
             <div id="bemvindo">
-                <h3 style="color:white; font-family:'arial';font-size: 120%;">Faça seu Login!</h3>
+                <h3 class="textobrancogrande">Faça seu Login!</h3>
                 <img id = 'logo2' src="Pré-Capa.png"/>
-
-
                 
-            
+
             </div>
 
             <div id="telaform">
 
+                <div id="email">
+                    <h1 class="textbrancopeq">Email:</h1>
+                    <label class="pergunta">
+                        <input class="caixapergunta" placeholder="                Entre seu email">
+                    </label>
+                </div>
 
+                <div id="senha">
+                    <div id="organizasenha">
+                        <h1 class="textbrancopeq">Senha:</h1>
+                        <button class="botao">
+                            <h2 class="textlaranjapeq">Esqueceu sua senha?</h2>
+                        </button>
+                    </div>
+                        <label class="pergunta">
+                        
+                        <input class="caixapergunta" placeholder="               Digite sua senha">
+                    </label>
+                    </div>
+                   
 
+                    
 
+                <div id ="lembrarcad">
+                    
+                    <button id="checkbox">
+                        <div id="bolinha"></div>
+                    </button>
+                    
+                    <h1 class="textlaranjapeq">Lembrar-se de mim</h1>
+
+                </div>
+
+                
+                <button id="botaoentrar" onclick="alertalogin()">Entrar</button>
+
+                
+
+                <div id="apple">
+                    <button class="entrecom">
+                        <img class="fotologo" src="logoGoogle.png"/>
+                        <h1" class="textoapple" > Entre com google</h1>
+                    </button>
+
+                    <button class="entrecom">
+                        <img class="fotologo" src="logoApple.png"/>
+                        <h1" class="textoapple"> Entre com Apple</h1>
+
+                    </button>
+
+                </div>
 
             </div>
-
-
     </div>
     <div id="bottom">
+
+        <button class="botao">Sobre</button>
+        <h1 class="ponto">•</h1>
+        <button class="botao">Central de ajuda</button>
+        <h1 class="ponto">•</h1>
+        <button class="botao">Termos de Serviço</button>
+        <h1 class="ponto">•</h1>
+        <button class="botao">Política de privacidade</button>
+        <h1 class="ponto">•</h1>
+        <button class="botao">Acessibilidade</button>
+        <h1 class="ponto">•</h1>
+        <button class="botao">Política de cookies</button>
+
 
 
     </div>
